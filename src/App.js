@@ -32,13 +32,14 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <div class="data"> 
-          <h1>Your IP is: {this.state.ip}</h1>
-          <h1>Your ISP is: {this.state.isp}</h1>
-          <h1>Your Country is: {this.state.country}</h1>
-          <h1>Your Province/State is: {this.state.regionName}</h1>
-          <h1>Your City is: {this.state.city}</h1>
-          <h1>Your timezone is: {this.state.timezone}</h1>
+        <h1>WHO AM I?</h1>
+        <div className="data"> 
+          <p>Your IP is: {this.state.ip}</p>
+          <p>Your ISP is: {this.state.isp}</p>
+          <p>Your Country is: {this.state.country}</p>
+          <p>Your Province/State is: {this.state.regionName}</p>
+          <p>Your City is: {this.state.city}</p>
+          <p>Your Timezone is: {this.state.timezone}</p>
         </div>
       </div>
     );
