@@ -1,5 +1,11 @@
+.data {
+  margin-top: 100px
+}
+
 .App {
   text-align: center;
+  color: #14ffec;
+  font-family: 'slimjoe';
 }
 
 .App-logo {
