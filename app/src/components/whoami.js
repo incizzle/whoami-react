@@ -15,15 +15,20 @@ class App extends Component {
       regionName: '',
       timezone: '',
     }
-    axios.get('https://ip-api.com/json/')
-      .then(response => this.setState({
-        ip: response.data.query,
-        city: response.data.city, 
-        country: response.data.country,
-        isp: response.data.isp, 
-        regionName: response.data.regionName,
-        timezone: response.data.timezone,
-      }))
+    
+      axios.get('https://api.ipify.org?format=json')
+        .then(response => axios.get('https://geo.ipify.org/api/v1?apiKey=at_s1f3sJbK08zLSduTzfn43MvJQ64Yq&ipAddress='+response.data.ip)
+        .then(response => this.setState({
+          ip: response.data.ip,
+          city: response.data.location.city, 
+          country: response.data.location.country,
+          // isp: response.data.isp, 
+          regionName: response.data.location.region,
+          timezone: response.data.location.timezone,
+        })))
+    
+    
+    
   }
 
   render() {
@@ -32,7 +37,7 @@ class App extends Component {
         <h1>WHO AM I?</h1>
         <div className="data"> 
           <p>Your IP is: {this.state.ip}</p>
-          <p>Your ISP is: {this.state.isp}</p>
+          {/* <p>Your ISP is: {this.state.isp}</p> */}
           <p>Your Country is: {this.state.country}</p>
           <p>Your Province/State is: {this.state.regionName}</p>
           <p>Your City is: {this.state.city}</p>
