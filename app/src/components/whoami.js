@@ -15,7 +15,7 @@ class App extends Component {
       regionName: '',
       timezone: '',
     }
-    axios.get('http://ip-api.com/json/')
+    axios.get('https://ip-api.com/json/')
       .then(response => this.setState({
         ip: response.data.query,
         city: response.data.city, 

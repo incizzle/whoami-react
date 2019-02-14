@@ -37,7 +37,7 @@ class Posts extends Component {
   handleSubmit(event) { // eslint-disable-next-line
     var re = new RegExp("^(?:(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])(\.(?!$)|$)){4}$");
     if (re.test(this.state.value)) {
-      axios.get('http://ip-api.com/json/'+this.state.value)
+      axios.get('https://ip-api.com/json/'+this.state.value)
       .then(
         response => this.setState({
         ip: response.data.query,
