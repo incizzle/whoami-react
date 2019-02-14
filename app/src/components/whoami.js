@@ -1,8 +1,6 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
 import axios from 'axios'
-
-
+import '../css/whoami.css'
 
 class App extends Component {
   constructor () {
@@ -17,10 +15,9 @@ class App extends Component {
       regionName: '',
       timezone: '',
     }
-    axios.get('https://api.ipify.org/?format=json')
-      .then(response => this.setState({ip: response.data.ip}))
-    axios.get('http://ip-api.com/json/'+this.state.ip)
+    axios.get('http://ip-api.com/json/')
       .then(response => this.setState({
+        ip: response.data.query,
         city: response.data.city, 
         country: response.data.country,
         isp: response.data.isp, 

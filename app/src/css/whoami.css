@@ -1,0 +1,18 @@
+.data {
+    margin-top: 50px
+  }
+  
+  .App {
+    text-align: center;
+    color: #14ffec;
+  }
+  
+  h1 {
+    margin-top: 50px;
+    font-family: 'bigjohn';
+  }
+  
+  p {
+    font-size: 20px;
+    font-family: 'slimjoe';
+  }

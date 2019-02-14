@@ -1,0 +1,66 @@
+.data {
+  margin-top: 20px
+}
+
+.text {
+  border: none;
+  width: 89%;
+  padding: 10px 20px;
+  display: block;
+  height: 15px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #14ffec;
+  overflow: hidden;
+  margin-top: 15px;
+  transition: all 0.5s ease-in-out;
+  font-family: 'slimjoe';
+}
+
+.text:focus {
+  outline: 0;
+  border: 1px solid #14ffec;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0);
+}
+
+.text:focus + span {
+  opacity: 0.6;
+}
+
+input {
+  display: inline-block;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+
+.App {
+  text-align: center;
+  color: #14ffec;
+}
+
+h1 {
+  margin-top: 50px;
+  font-family: 'bigjohn';
+  text-align: center;
+  color: #14ffec
+}
+
+h2 {
+  font-size: 20px;
+  display: inline;
+  font-family: 'slimjoe';
+}
+
+p {
+  font-size: 20px;
+  font-family: 'slimjoe';
+}
+.submit {
+  border: none;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.5s ease-in-out;
+  border: 1px solid #14ffec
+}

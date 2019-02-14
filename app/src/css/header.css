@@ -1,5 +1,10 @@
 a {
-    color: white
+    color: #212121
+}
+
+a:hover {
+    color: #212121;
+    text-decoration: none
 }
 
 .navbar-brand {
@@ -15,7 +20,7 @@ a {
     width: 100%;
     left: 0;
     background: #212121;
-  }
+}
 
 .navbar-brand:after{
     content: '';
@@ -27,7 +32,11 @@ a {
     background: #212121;
     transition: width .5s ease;
     -webkit-transition: width .5s ease;
-  }
+}
+
+.navbar-brand:hover{
+    text-decoration: none
+}
 
 .navbar {
     background-color: #14ffec;
