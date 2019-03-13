@@ -1,7 +1,7 @@
 pipeline:
   build-dev:
     image: plugins/docker
-    repo: incizzle/whoami
+    repo: ikifar/whoami
     secrets: [ docker_username, docker_password ]
     tag: [ dev ]
     when:
@@ -9,7 +9,7 @@ pipeline:
 
   build-prod:
     image: plugins/docker
-    repo: incizzle/whoami
+    repo: ikifar/whoami
     secrets: [ docker_username, docker_password ]
     tag: [ master ]
     when:
