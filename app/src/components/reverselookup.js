@@ -52,7 +52,7 @@ class Posts extends Component {
           ip: response.data.ip,
           city: response.data.location.city, 
           country: response.data.location.country,
-          // isp: response.data.isp, 
+          isp: response.data.isp, 
           regionName: response.data.location.region,
           timezone: response.data.location.timezone,
     }))
@@ -80,7 +80,7 @@ class Posts extends Component {
         </div>
         <div className="data">
           <p>IP: {this.state.ip}</p>
-          {/* <p>ISP: {this.state.isp}</p> */}
+          <p>ISP: {this.state.isp}</p>
           <p>Country: {this.state.country}</p>
           <p>Province/State: {this.state.regionName}</p>
           <p>City: {this.state.city}</p>
