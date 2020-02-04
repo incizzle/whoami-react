@@ -80,11 +80,11 @@ class Posts extends Component {
         </div>
         <div className="data">
           <p>IP: {this.state.ip}</p>
-          <p>ISP: {this.state.isp}</p>
           <p>Country: {this.state.country}</p>
           <p>Province/State: {this.state.regionName}</p>
           <p>City: {this.state.city}</p>
           <p>Timezone: {this.state.timezone}</p>
+          <p>ISP: {this.state.isp}</p>
         </div>
       </div>
     );
