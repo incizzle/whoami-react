@@ -1,6 +1,0 @@
-{
-  "projects": {
-    "prod": "whoami-react",
-    "default": "whoami-react"
-  }
-}
